@@ -1,0 +1,66 @@
+# Standards: 1.2
+---
+- name: Download repo key
+  shell:
+    cmd: "curl -sSL https://apt.releases.hashicorp.com/gpg | gpg --dearmor --output {{ terraform_keyring }}"
+    creates: "{{ terraform_keyring }}"
+  tags:
+    - terraform
+
+- name: Add apt repository
+  apt_repository:
+    repo: "deb [arch={{ terraform_arch }} signed-by={{ terraform_keyring }}] https://apt.releases.hashicorp.com {{ ansible_distribution_release }} main"
+    filename: hashicorp
+    update_cache: True
+    state: present
+  tags:
+    - terraform
+
+- name: Install required packages
+  loop:
+    - terraform
+    - python3-pip
+  package:
+    name: "{{ item }}"
+    state: present
+  tags:
+    - terraform
+
+- name: Download tflint release
+  when:
+    - terraform_tflint_enabled
+  unarchive:
+    src: "{{ terraform_tflint_download }}"
+    dest: "{{ terraform_install_path }}"
+    include:
+      - tflint
+    remote_src: True
+    owner: root
+    group: root
+    mode: u=rwx,g=rx,o=rx
+  tags:
+    - terraform
+
+- name: Download tfsec release
+  when:
+    - terraform_tfsec_enabled
+  get_url:
+    url: "{{ terraform_tfsec_download }}"
+    dest: "{{ terraform_install_path }}/tfsec"
+    owner: root
+    group: root
+    mode: u=rwx,g=rx,o=rx
+  tags:
+    - terraform
+
+- name: Install checkov pip
+  when:
+    - terraform_checkov_enabled
+  pip:
+    name: checkov
+    state: "{{ terraform_checkov_version is defined | ternary('present', 'latest') }}"
+    version: "{{ terraform_checkov_version | default(omit) }}"
+  tags:
+    - terraform
+
+...

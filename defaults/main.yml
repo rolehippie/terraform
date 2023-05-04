@@ -1,0 +1,45 @@
+# Standards: 1.2
+---
+# @var terraform_keyring:description: Path for the repository keyring
+terraform_keyring: /usr/share/keyrings/hashicorp-archive-keyring.gpg
+
+# @var terraform_arch:description: Architecture for terraform repo
+terraform_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' else 'amd64' }}"
+
+# @var terraform_tflint_enabled:description: Enable installation of tflint
+terraform_tflint_enabled: True
+
+# @var terraform_tflint_version:description: Version of tflint to install
+# renovate: datasource=github-releases depName=terraform-linters/tflint
+terraform_tflint_version: 0.46.1
+
+# @var terraform_tflint_arch:description: Architecture for tflint
+terraform_tflint_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' else 'amd64' }}"
+
+# @var terraform_tflint_download:description: URL to download tflint from
+terraform_tflint_download: "https://github.com/terraform-linters/tflint/releases/download/v{{ terraform_tflint_version }}/tflint_linux_{{ terraform_tflint_arch }}.zip"
+
+# @var terraform_tfsec_enabled:description: Enable installation of tfsec
+terraform_tfsec_enabled: True
+
+# @var terraform_tfsec_version:description: Version of tfsec to install
+# renovate: datasource=github-releases depName=aquasecurity/tfsec
+terraform_tfsec_version: 1.28.1
+
+# @var terraform_tfsec_arch:description: Architecture for tfsec
+terraform_tfsec_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' else 'amd64' }}"
+
+# @var terraform_tfsec_download:description: URL to download tfsec from
+terraform_tfsec_download: "https://github.com/aquasecurity/tfsec/releases/download/v{{ terraform_tfsec_version }}/tfsec-linux-{{ terraform_tfsec_arch }}"
+
+# @var terraform_checkov_enabled:description: Enable installation of checkov
+terraform_checkov_enabled: False
+
+# @var terraform_checkov_version:description: Define a specific version of checkov
+# renovate: datasource=github-releases depName=bridgecrewio/checkov
+terraform_checkov_version: 2.3.214
+
+# @var terraform_install_path:description: Path to install the binaries
+terraform_install_path: /usr/bin
+
+...
