@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.1](https://github.com/rolehippie/terraform/compare/v1.2.0...v1.2.1) (2023-09-11)
+
+
+### Bugfixes
+
+* **deps:** update dependency aquasecurity/tfsec to v1.28.2 ([1421b9a](https://github.com/rolehippie/terraform/commit/1421b9a32e3b0667c3cd5806b04c54c784882ab9))
+* **deps:** update dependency aquasecurity/tfsec to v1.28.4 ([82af123](https://github.com/rolehippie/terraform/commit/82af1234fd89866a6f59c3abac22a3f303fa47e0))
+
 ## [1.2.0](https://github.com/rolehippie/terraform/compare/v1.1.0...v1.2.0) (2023-09-04)
 
 
