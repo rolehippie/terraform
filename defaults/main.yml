@@ -1,4 +1,3 @@
-# Standards: 1.2
 ---
 # @var terraform_keyring:description: Path for the repository keyring
 terraform_keyring: /usr/share/keyrings/hashicorp-archive-keyring.gpg
