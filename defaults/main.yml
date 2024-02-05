@@ -11,7 +11,7 @@ terraform_tflint_enabled: True
 
 # @var terraform_tflint_version:description: Version of tflint to install
 # renovate: datasource=github-releases depName=terraform-linters/tflint
-terraform_tflint_version: 0.50.2
+terraform_tflint_version: 0.50.3
 
 # @var terraform_tflint_arch:description: Architecture for tflint
 terraform_tflint_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' else 'amd64' }}"
