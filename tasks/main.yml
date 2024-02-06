@@ -1,13 +1,13 @@
 ---
 - name: Download repo key
-  shell:
+  ansible.builtin.shell:
     cmd: "curl -sSL https://apt.releases.hashicorp.com/gpg | gpg --dearmor --output {{ terraform_keyring }}"
     creates: "{{ terraform_keyring }}"
   tags:
     - terraform
 
 - name: Add apt repository
-  apt_repository:
+  ansible.builtin.apt_repository:
     repo: "deb [arch={{ terraform_arch }} signed-by={{ terraform_keyring }}] https://apt.releases.hashicorp.com {{ ansible_distribution_release }} main"
     filename: hashicorp
     update_cache: True
@@ -20,7 +20,7 @@
     - terraform
     - unzip
     - python3-pip
-  package:
+  ansible.builtin.package:
     name: "{{ item }}"
     state: present
   tags:
@@ -29,7 +29,7 @@
 - name: Download tflint release
   when:
     - terraform_tflint_enabled
-  unarchive:
+  ansible.builtin.unarchive:
     src: "{{ terraform_tflint_download }}"
     dest: "{{ terraform_install_path }}"
     include:
@@ -44,7 +44,7 @@
 - name: Download tfsec release
   when:
     - terraform_tfsec_enabled
-  get_url:
+  ansible.builtin.get_url:
     url: "{{ terraform_tfsec_download }}"
     dest: "{{ terraform_install_path }}/tfsec"
     owner: root
@@ -56,7 +56,7 @@
 - name: Install checkov pip
   when:
     - terraform_checkov_enabled
-  pip:
+  ansible.builtin.pip:
     name: checkov
     state: "{{ terraform_checkov_version is defined | ternary('present', 'latest') }}"
     version: "{{ terraform_checkov_version | default(omit) }}"
