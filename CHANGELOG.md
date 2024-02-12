@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.0.0](https://github.com/rolehippie/terraform/compare/v1.4.2...v2.0.0) (2024-02-12)
+
+
+### Features
+
+* used full qualified collection names ([a6a3bea](https://github.com/rolehippie/terraform/commit/a6a3beacbf0b4dbb76def900a493b71ef5ec0c10))
+
+
+### Bugfixes
+
+* **deps:** update dependency terraform-linters/tflint to v0.50.3 ([28abd62](https://github.com/rolehippie/terraform/commit/28abd6202a052202ba1d56a6ef7cb748939c3f07))
+
 ## [1.4.2](https://github.com/rolehippie/terraform/compare/v1.4.1...v1.4.2) (2024-01-22)
 
 
