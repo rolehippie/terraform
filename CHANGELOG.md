@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.1.1](https://github.com/rolehippie/terraform/compare/v2.1.0...v2.1.1) (2024-05-13)
+
+
+### Bugfixes
+
+* **deps:** update dependency aquasecurity/tfsec to v1.28.6 ([49e8438](https://github.com/rolehippie/terraform/commit/49e8438ed8cd9023cef1bd5e60c1aac150c1c554))
+* **deps:** update dependency terraform-linters/tflint to v0.51.1 ([1e723b4](https://github.com/rolehippie/terraform/commit/1e723b49dd7c17719ec35520814910650f3503e2))
+
 ## [2.1.0](https://github.com/rolehippie/terraform/compare/v2.0.0...v2.1.0) (2024-05-06)
 
 
