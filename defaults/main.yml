@@ -10,7 +10,7 @@ terraform_tflint_enabled: True
 
 # @var terraform_tflint_version:description: Version of tflint to install
 # renovate: datasource=github-releases depName=terraform-linters/tflint
-terraform_tflint_version: 0.51.1
+terraform_tflint_version: 0.51.2
 
 # @var terraform_tflint_arch:description: Architecture for tflint
 terraform_tflint_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' else 'amd64' }}"
@@ -23,13 +23,13 @@ terraform_tfsec_enabled: True
 
 # @var terraform_tfsec_version:description: Version of tfsec to install
 # renovate: datasource=github-releases depName=aquasecurity/tfsec
-terraform_tfsec_version: 1.28.6
+terraform_tfsec_version: 1.28.9
 
 # @var terraform_tfsec_arch:description: Architecture for tfsec
 terraform_tfsec_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' else 'amd64' }}"
 
 # @var terraform_tfsec_download:description: URL to download tfsec from
-terraform_tfsec_download: "https://github.com/aquasecurity/tfsec/releases/download/v{{ terraform_tfsec_version }}/tfsec-linux-{{ terraform_tfsec_arch }}"
+terraform_tfsec_download: "https://github.com/aquasecurity/tfsec/releases/download/v{{ terraform_tfsec_version }}/tfsec_{{ terraform_tfsec_version }}_linux_{{ terraform_tfsec_arch }}.tar.gz"
 
 # @var terraform_checkov_enabled:description: Enable installation of checkov
 terraform_checkov_enabled: False

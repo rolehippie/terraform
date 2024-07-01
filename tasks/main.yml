@@ -44,9 +44,13 @@
 - name: Download tfsec release
   when:
     - terraform_tfsec_enabled
-  ansible.builtin.get_url:
-    url: "{{ terraform_tfsec_download }}"
-    dest: "{{ terraform_install_path }}/tfsec"
+  ansible.builtin.unarchive:
+    src: "{{ terraform_tfsec_download }}"
+    dest: "{{ terraform_install_path }}"
+    include:
+      - tfsec
+      - tfsec-checkgen
+    remote_src: True
     owner: root
     group: root
     mode: u=rwx,g=rx,o=rx
