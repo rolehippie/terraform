@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.1.2](https://github.com/rolehippie/terraform/compare/v2.1.1...v2.1.2) (2024-07-01)
+
+
+### Bugfixes
+
+* correctly unarchive new releases of tfsec ([314e79f](https://github.com/rolehippie/terraform/commit/314e79f684b2ca4005a36cccdfe2f0ba99db702c))
+* **deps:** update patch versions ([c8e83e5](https://github.com/rolehippie/terraform/commit/c8e83e5468b56ebee86722ca823a3ab53ad62202))
+
 ## [2.1.1](https://github.com/rolehippie/terraform/compare/v2.1.0...v2.1.1) (2024-05-13)
 
 
