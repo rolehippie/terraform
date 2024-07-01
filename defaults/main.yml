@@ -29,7 +29,7 @@ terraform_tfsec_version: 1.28.9
 terraform_tfsec_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' else 'amd64' }}"
 
 # @var terraform_tfsec_download:description: URL to download tfsec from
-terraform_tfsec_download: "https://github.com/aquasecurity/tfsec/releases/download/v{{ terraform_tfsec_version }}/tfsec-linux-{{ terraform_tfsec_arch }}"
+terraform_tfsec_download: "https://github.com/aquasecurity/tfsec/releases/download/v{{ terraform_tfsec_version }}/tfsec_{{ terraform_tfsec_version }}_linux_{{ terraform_tfsec_arch }}.tar.gz"
 
 # @var terraform_checkov_enabled:description: Enable installation of checkov
 terraform_checkov_enabled: False
