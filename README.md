@@ -132,7 +132,7 @@ Version of tflint to install
 #### Default value
 
 ```YAML
-terraform_tflint_version: 0.51.1
+terraform_tflint_version: 0.52.0
 ```
 
 ### terraform_tfsec_arch
@@ -154,7 +154,8 @@ URL to download tfsec from
 
 ```YAML
 terraform_tfsec_download: https://github.com/aquasecurity/tfsec/releases/download/v{{
-  terraform_tfsec_version }}/tfsec-linux-{{ terraform_tfsec_arch }}
+  terraform_tfsec_version }}/tfsec_{{ terraform_tfsec_version }}_linux_{{ terraform_tfsec_arch
+  }}.tar.gz
 ```
 
 ### terraform_tfsec_enabled
@@ -174,7 +175,7 @@ Version of tfsec to install
 #### Default value
 
 ```YAML
-terraform_tfsec_version: 1.28.6
+terraform_tfsec_version: 1.28.10
 ```
 
 ## Discovered Tags
