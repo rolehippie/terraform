@@ -175,7 +175,7 @@ Version of tfsec to install
 #### Default value
 
 ```YAML
-terraform_tfsec_version: 1.28.10
+terraform_tfsec_version: 1.28.11
 ```
 
 ## Discovered Tags
