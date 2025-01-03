@@ -23,7 +23,7 @@ terraform_tfsec_enabled: True
 
 # @var terraform_tfsec_version:description: Version of tfsec to install
 # renovate: datasource=github-releases depName=aquasecurity/tfsec
-terraform_tfsec_version: 1.28.11
+terraform_tfsec_version: 1.28.12
 
 # @var terraform_tfsec_arch:description: Architecture for tfsec
 terraform_tfsec_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' else 'amd64' }}"
