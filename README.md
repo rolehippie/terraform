@@ -1,4 +1,4 @@
-# terraform
+# workspace
 
 [![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/terraform)
 [![General Workflow](https://github.com/rolehippie/terraform/actions/workflows/general.yml/badge.svg)](https://github.com/rolehippie/terraform/actions/workflows/general.yml)
@@ -111,7 +111,8 @@ URL to download tflint from
 #### Default value
 
 ```YAML
-terraform_tflint_download: https://github.com/terraform-linters/tflint/releases/download/v{{
+terraform_tflint_download: 
+  https://github.com/terraform-linters/tflint/releases/download/v{{ 
   terraform_tflint_version }}/tflint_linux_{{ terraform_tflint_arch }}.zip
 ```
 
@@ -132,7 +133,7 @@ Version of tflint to install
 #### Default value
 
 ```YAML
-terraform_tflint_version: 0.58.0
+terraform_tflint_version: 0.58.1
 ```
 
 ### terraform_tfsec_arch
@@ -153,9 +154,10 @@ URL to download tfsec from
 #### Default value
 
 ```YAML
-terraform_tfsec_download: https://github.com/aquasecurity/tfsec/releases/download/v{{
-  terraform_tfsec_version }}/tfsec_{{ terraform_tfsec_version }}_linux_{{ terraform_tfsec_arch
-  }}.tar.gz
+terraform_tfsec_download: 
+  https://github.com/aquasecurity/tfsec/releases/download/v{{ 
+  terraform_tfsec_version }}/tfsec_{{ terraform_tfsec_version }}_linux_{{ 
+  terraform_tfsec_arch }}.tar.gz
 ```
 
 ### terraform_tfsec_enabled
@@ -181,7 +183,6 @@ terraform_tfsec_version: 1.28.14
 ## Discovered Tags
 
 **_terraform_**
-
 
 ## Dependencies
 
