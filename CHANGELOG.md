@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.8.1](https://github.com/rolehippie/terraform/compare/v2.8.0...v2.8.1) (2025-07-21)
+
+
+### Bugfixes
+
+* **deps:** update dependency terraform-linters/tflint to v0.58.1 ([4c136d0](https://github.com/rolehippie/terraform/commit/4c136d07f96032b7f62c30fa4991242c8d8c5b31))
+
 ## [2.8.0](https://github.com/rolehippie/terraform/compare/v2.7.0...v2.8.0) (2025-05-26)
 
 
