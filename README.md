@@ -1,4 +1,4 @@
-# workspace
+# terraform
 
 [![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/terraform)
 [![General Workflow](https://github.com/rolehippie/terraform/actions/workflows/general.yml/badge.svg)](https://github.com/rolehippie/terraform/actions/workflows/general.yml)
@@ -50,7 +50,8 @@ Architecture for terraform repo
 #### Default value
 
 ```YAML
-terraform_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' else 'amd64' }}"
+terraform_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' or ansible_architecture
+  == 'arm64' else 'amd64' }}"
 ```
 
 ### terraform_checkov_enabled
@@ -100,8 +101,8 @@ Architecture for tflint
 #### Default value
 
 ```YAML
-terraform_tflint_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' else 'amd64'
-  }}"
+terraform_tflint_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' or ansible_architecture
+  == 'arm64' else 'amd64' }}"
 ```
 
 ### terraform_tflint_download
@@ -143,8 +144,8 @@ Architecture for tfsec
 #### Default value
 
 ```YAML
-terraform_tfsec_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' else 'amd64'
-  }}"
+terraform_tfsec_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' or ansible_architecture
+  == 'arm64' else 'amd64' }}"
 ```
 
 ### terraform_tfsec_download

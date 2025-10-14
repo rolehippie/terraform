@@ -1,8 +1,28 @@
 ---
 - name: Download repo key
-  ansible.builtin.shell:
-    cmd: "curl -sSL https://apt.releases.hashicorp.com/gpg | gpg --dearmor --output {{ terraform_keyring }}"
-    creates: "{{ terraform_keyring }}"
+  register: terraform_key_download
+  ansible.builtin.get_url:
+    url: https://apt.releases.hashicorp.com/gpg
+    dest: "{{ terraform_keyring }}.asc"
+    mode: u=rw,g=r,o=r
+    force: true
+  tags:
+    - terraform
+
+- name: Check repo key
+  register: terraform_key_status
+  ansible.builtin.stat:
+    path: "{{ terraform_keyring }}"
+  tags:
+    - terraform
+
+- name: Dearmor repo key
+  when:
+    - terraform_key_download.changed or not terraform_key_status.stat.exists
+  register: terraform_key_convert
+  changed_when: terraform_key_convert.rc == 0
+  ansible.builtin.command:
+    cmd: "gpg --dearmor -o {{ terraform_keyring }} {{ terraform_keyring }}.asc"
   tags:
     - terraform
 
@@ -10,7 +30,7 @@
   ansible.builtin.apt_repository:
     repo: "deb [arch={{ terraform_arch }} signed-by={{ terraform_keyring }}] https://apt.releases.hashicorp.com {{ ansible_distribution_release }} main"
     filename: hashicorp
-    update_cache: True
+    update_cache: true
     state: present
   tags:
     - terraform
@@ -34,7 +54,7 @@
     dest: "{{ terraform_install_path }}"
     include:
       - tflint
-    remote_src: True
+    remote_src: true
     owner: root
     group: root
     mode: u=rwx,g=rx,o=rx
@@ -50,7 +70,7 @@
     include:
       - tfsec
       - tfsec-checkgen
-    remote_src: True
+    remote_src: true
     owner: root
     group: root
     mode: u=rwx,g=rx,o=rx
