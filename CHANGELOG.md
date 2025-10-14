@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.10.0](https://github.com/rolehippie/terraform/compare/v2.9.0...v2.10.0) (2025-10-14)
+
+
+### Features
+
+* apply new repo structure and update linting ([87c1595](https://github.com/rolehippie/terraform/commit/87c1595586f73ee446a8bb5bbeebef7b62d5ead8))
+* drop support for ubuntu 20.04, package not available ([b804bea](https://github.com/rolehippie/terraform/commit/b804bea7ebdb0e1315cc5afd183c070eb8224337))
+
 ## [2.9.0](https://github.com/rolehippie/terraform/compare/v2.8.1...v2.9.0) (2025-09-08)
 
 
