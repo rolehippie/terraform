@@ -134,7 +134,7 @@ Version of tflint to install
 #### Default value
 
 ```YAML
-terraform_tflint_version: 0.59.1
+terraform_tflint_version: 0.60.0
 ```
 
 ### terraform_tfsec_arch
