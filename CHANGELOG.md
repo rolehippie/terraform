@@ -1,5 +1,25 @@
 # Changelog
 
+## [2.12.0](https://github.com/rolehippie/terraform/compare/v2.11.0...v2.12.0) (2026-02-09)
+
+### Dependencies
+
+* **minor:** update dependency terraform-linters/tflint to v0.61.0 ([#81](https://github.com/rolehippie/terraform/issues/81)) ([886e42b](https://github.com/rolehippie/terraform/commit/886e42bf4cac48a7fe1d33cc86806fa7a977cdcc))
+
+### Miscellaneous
+
+* **flake:** updated lockfile [skip ci] ([8130061](https://github.com/rolehippie/terraform/commit/81300614a0d73783cb020c1b8c292b64bf4e12cf))
+* **flake:** updated lockfile [skip ci] ([85e747c](https://github.com/rolehippie/terraform/commit/85e747c0eb80e8b182a66c6d57a5a2439b4e0410))
+* **flake:** updated lockfile [skip ci] ([df15d5c](https://github.com/rolehippie/terraform/commit/df15d5c697539ee242dc9f0a9a100d745f8dcb63))
+* **flake:** updated lockfile [skip ci] ([5e26969](https://github.com/rolehippie/terraform/commit/5e269695eb14cd8dad186c12962893efd7f0ad19))
+* **flake:** updated lockfile [skip ci] ([7f62b77](https://github.com/rolehippie/terraform/commit/7f62b77297a405420a9e7582a8b2f70dd9846eb7))
+* **flake:** updated lockfile [skip ci] ([f3e2a25](https://github.com/rolehippie/terraform/commit/f3e2a257d5db718189b8a75980269b08d4a3efac))
+* **flake:** updated lockfile [skip ci] ([073ea7f](https://github.com/rolehippie/terraform/commit/073ea7fb012247ffa15c5f6e5763f7d1ffbb72a1))
+* **flake:** updated lockfile [skip ci] ([4a584a1](https://github.com/rolehippie/terraform/commit/4a584a1a5044115434b96ad9ae14be21176248d3))
+* **flake:** updated lockfile [skip ci] ([e74b6c6](https://github.com/rolehippie/terraform/commit/e74b6c6f4b0c1aa7f905d2bf51e839ae3cee1e01))
+* **flake:** updated lockfile [skip ci] ([a6b82e9](https://github.com/rolehippie/terraform/commit/a6b82e9635ab13df4018b1c81b6815363e8da6fb))
+* **flake:** updated lockfile [skip ci] ([2794b74](https://github.com/rolehippie/terraform/commit/2794b7410ed0c823ad136276c026cc3ebd82d769))
+
 ## [2.11.0](https://github.com/rolehippie/terraform/compare/v2.10.0...v2.11.0) (2025-11-24)
 
 
