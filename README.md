@@ -50,8 +50,7 @@ Architecture for terraform repo
 #### Default value
 
 ```YAML
-terraform_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' or ansible_architecture
-  == 'arm64' else 'amd64' }}"
+terraform_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' or ansible_architecture == 'arm64' else 'amd64' }}"
 ```
 
 ### terraform_checkov_enabled
@@ -101,8 +100,7 @@ Architecture for tflint
 #### Default value
 
 ```YAML
-terraform_tflint_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' or ansible_architecture
-  == 'arm64' else 'amd64' }}"
+terraform_tflint_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' or ansible_architecture == 'arm64' else 'amd64' }}"
 ```
 
 ### terraform_tflint_download
@@ -112,9 +110,7 @@ URL to download tflint from
 #### Default value
 
 ```YAML
-terraform_tflint_download: 
-  https://github.com/terraform-linters/tflint/releases/download/v{{ 
-  terraform_tflint_version }}/tflint_linux_{{ terraform_tflint_arch }}.zip
+terraform_tflint_download: https://github.com/terraform-linters/tflint/releases/download/v{{ terraform_tflint_version }}/tflint_linux_{{ terraform_tflint_arch }}.zip
 ```
 
 ### terraform_tflint_enabled
@@ -144,8 +140,7 @@ Architecture for tfsec
 #### Default value
 
 ```YAML
-terraform_tfsec_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' or ansible_architecture
-  == 'arm64' else 'amd64' }}"
+terraform_tfsec_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' or ansible_architecture == 'arm64' else 'amd64' }}"
 ```
 
 ### terraform_tfsec_download
@@ -155,10 +150,7 @@ URL to download tfsec from
 #### Default value
 
 ```YAML
-terraform_tfsec_download: 
-  https://github.com/aquasecurity/tfsec/releases/download/v{{ 
-  terraform_tfsec_version }}/tfsec_{{ terraform_tfsec_version }}_linux_{{ 
-  terraform_tfsec_arch }}.tar.gz
+terraform_tfsec_download: https://github.com/aquasecurity/tfsec/releases/download/v{{ terraform_tfsec_version }}/tfsec_{{ terraform_tfsec_version }}_linux_{{ terraform_tfsec_arch }}.tar.gz
 ```
 
 ### terraform_tfsec_enabled
