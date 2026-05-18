@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.13.1](https://github.com/rolehippie/terraform/compare/v2.13.0...v2.13.1) (2026-05-18)
+
+### Dependencies
+
+* **patch:** update dependency terraform-linters/tflint to v0.62.1 ([#86](https://github.com/rolehippie/terraform/issues/86)) ([89ec725](https://github.com/rolehippie/terraform/commit/89ec725ee265da4e11c09091d0fea69a52eab7ae))
+
+### Miscellaneous
+
+* **flake:** updated lockfile [skip ci] ([5258975](https://github.com/rolehippie/terraform/commit/5258975dcbdd05bd4bfb8cc152be72c470920ec6))
+* **flake:** updated lockfile [skip ci] ([305c9d2](https://github.com/rolehippie/terraform/commit/305c9d286b5d7c0e2c7d0e1036bed40fd3cc2b07))
+* **flake:** updated lockfile [skip ci] ([fd77f93](https://github.com/rolehippie/terraform/commit/fd77f93735edc4f18186c60debbd3ef06f1f0292))
+* **flake:** updated lockfile [skip ci] ([735fef3](https://github.com/rolehippie/terraform/commit/735fef350a6c8b473f3b704f71db2bff325f2f5d))
+
 ## [2.13.0](https://github.com/rolehippie/terraform/compare/v2.12.0...v2.13.0) (2026-04-20)
 
 ### Dependencies
