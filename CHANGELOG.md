@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.14.0](https://github.com/rolehippie/terraform/compare/v2.13.1...v2.14.0) (2026-06-08)
+
+### Dependencies
+
+* **minor:** update version prefix to v0.63.0 ([#87](https://github.com/rolehippie/terraform/issues/87)) ([761a29d](https://github.com/rolehippie/terraform/commit/761a29d293f1da744871c951be4da9d08ffc5598))
+* **patch:** update version prefix to v0.63.1 ([#88](https://github.com/rolehippie/terraform/issues/88)) ([ee85ac8](https://github.com/rolehippie/terraform/commit/ee85ac8f2a4b391b65d6ba1b6adae20d45b887f7))
+
+### Miscellaneous
+
+* **flake:** updated lockfile [skip ci] ([7143285](https://github.com/rolehippie/terraform/commit/714328572155d919df0be85cbe5b88bb8371c32f))
+* **flake:** updated lockfile [skip ci] ([1672a45](https://github.com/rolehippie/terraform/commit/1672a457694edd8822009cd0b72dce9b84660040))
+* **flake:** updated lockfile [skip ci] ([00269b8](https://github.com/rolehippie/terraform/commit/00269b88c705a088b04b3fdf2f7acf1c01f755b8))
+
 ## [2.13.1](https://github.com/rolehippie/terraform/compare/v2.13.0...v2.13.1) (2026-05-18)
 
 ### Dependencies
