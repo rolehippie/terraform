@@ -1,5 +1,7 @@
 # Changelog
 
+## [2.15.0](https://github.com/rolehippie/terraform/compare/v2.14.0...v2.15.0) (2026-07-27)
+
 ## [2.14.0](https://github.com/rolehippie/terraform/compare/v2.13.1...v2.14.0) (2026-06-08)
 
 ### Dependencies
