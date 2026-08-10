@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.16.0](https://github.com/rolehippie/terraform/compare/v2.15.0...v2.16.0) (2026-08-10)
+
+### Dependencies
+
+* **minor:** update dependency pipx:ansible-doctor to v8.4.0 ([#95](https://github.com/rolehippie/terraform/issues/95)) ([8194568](https://github.com/rolehippie/terraform/commit/8194568603875f1fa58c7710d87357cb04e81d79))
+* **patch:** update dependency python to v3.14.7 ([#93](https://github.com/rolehippie/terraform/issues/93)) ([6a73fde](https://github.com/rolehippie/terraform/commit/6a73fdebff044f0f8747f6d625136e6e7867f023))
+
 ## [2.15.0](https://github.com/rolehippie/terraform/compare/v2.14.0...v2.15.0) (2026-07-27)
 
 ## [2.14.0](https://github.com/rolehippie/terraform/compare/v2.13.1...v2.14.0) (2026-06-08)
