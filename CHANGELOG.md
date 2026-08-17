@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.17.0](https://github.com/rolehippie/terraform/compare/v2.16.0...v2.17.0) (2026-08-17)
+
+### Dependencies
+
+* **minor:** update dependency pipx:ansible-lint to v26.8.0 ([#98](https://github.com/rolehippie/terraform/issues/98)) ([ef21f5b](https://github.com/rolehippie/terraform/commit/ef21f5b4ee7ad77c8107f99ca24831c8bfe9cc9e))
+* **patch:** update dependency pipx:ansible-core to v2.21.3 ([#96](https://github.com/rolehippie/terraform/issues/96)) ([50571fb](https://github.com/rolehippie/terraform/commit/50571fb683b20bd59142c6a822784349fb8670fe))
+* **patch:** update dependency pre-commit to v4.6.2 ([#97](https://github.com/rolehippie/terraform/issues/97)) ([ca55a9b](https://github.com/rolehippie/terraform/commit/ca55a9bb9a4a625ebc29d65e19d95fe50e484609))
+
 ## [2.16.0](https://github.com/rolehippie/terraform/compare/v2.15.0...v2.16.0) (2026-08-10)
 
 ### Dependencies
