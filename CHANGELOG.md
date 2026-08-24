@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.18.0](https://github.com/rolehippie/terraform/compare/v2.17.0...v2.18.0) (2026-08-24)
+
+### Dependencies
+
+* **minor:** update dependency pipx:molecule to v26.8.0 ([#99](https://github.com/rolehippie/terraform/issues/99)) ([1ece0fc](https://github.com/rolehippie/terraform/commit/1ece0fc5762101d4feae9ce8e4e59432d8030df5))
+
 ## [2.17.0](https://github.com/rolehippie/terraform/compare/v2.16.0...v2.17.0) (2026-08-17)
 
 ### Dependencies
