@@ -50,7 +50,7 @@ Architecture for terraform repo
 #### Default value
 
 ```YAML
-terraform_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' or ansible_architecture == 'arm64' else 'amd64' }}"
+terraform_arch: "{{ 'arm64' if ansible_facts['architecture'] in ['aarch64', 'arm64'] else 'amd64' }}"
 ```
 
 ### terraform_checkov_enabled
@@ -100,7 +100,7 @@ Architecture for tflint
 #### Default value
 
 ```YAML
-terraform_tflint_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' or ansible_architecture == 'arm64' else 'amd64' }}"
+terraform_tflint_arch: "{{ 'arm64' if ansible_facts['architecture'] in ['aarch64', 'arm64'] else 'amd64' }}"
 ```
 
 ### terraform_tflint_download
@@ -140,7 +140,7 @@ Architecture for tfsec
 #### Default value
 
 ```YAML
-terraform_tfsec_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' or ansible_architecture == 'arm64' else 'amd64' }}"
+terraform_tfsec_arch: "{{ 'arm64' if ansible_facts['architecture'] in ['aarch64', 'arm64'] else 'amd64' }}"
 ```
 
 ### terraform_tfsec_download

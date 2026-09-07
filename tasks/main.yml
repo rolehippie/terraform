@@ -22,13 +22,13 @@
   register: terraform_key_convert
   changed_when: terraform_key_convert.rc == 0
   ansible.builtin.command:
-    cmd: "gpg --dearmor -o {{ terraform_keyring }} {{ terraform_keyring }}.asc"
+    cmd: "gpg --batch --yes --dearmor -o {{ terraform_keyring }} {{ terraform_keyring }}.asc"
   tags:
     - terraform
 
 - name: Add apt repository
   ansible.builtin.apt_repository:
-    repo: "deb [arch={{ terraform_arch }} signed-by={{ terraform_keyring }}] https://apt.releases.hashicorp.com {{ ansible_distribution_release }} main"
+    repo: "deb [arch={{ terraform_arch }} signed-by={{ terraform_keyring }}] https://apt.releases.hashicorp.com {{ ansible_facts['distribution_release'] }} main"
     filename: hashicorp
     update_cache: true
     state: present
