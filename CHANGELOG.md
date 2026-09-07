@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.19.0](https://github.com/rolehippie/terraform/compare/v2.18.1...v2.19.0) (2026-09-07)
+
+### Features
+
+* add separate requirements for molecule run ([b203014](https://github.com/rolehippie/terraform/commit/b20301419d7deb7753fd35aead325638b03d7d1e))
+* use new required facts as attributes ([9e51c1b](https://github.com/rolehippie/terraform/commit/9e51c1b8af32ad2cd5529b82f35b3c62fcd8a957))
+
 ## [2.18.1](https://github.com/rolehippie/terraform/compare/v2.18.0...v2.18.1) (2026-08-31)
 
 ### Dependencies
