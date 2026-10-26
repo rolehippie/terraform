@@ -1,5 +1,25 @@
 # Changelog
 
+## [2.20.0](https://github.com/rolehippie/terraform/compare/v2.19.0...v2.20.0) (2026-10-26)
+
+### Dependencies
+
+* **minor:** update dependency terraform-linters/tflint to v0.65.0 ([#116](https://github.com/rolehippie/terraform/issues/116)) ([f2a3275](https://github.com/rolehippie/terraform/commit/f2a3275edaefcbc94e15b56ea063d6e188481284))
+* **mise:** update dependency pipx:ansible-core to v2.21.4 ([#101](https://github.com/rolehippie/terraform/issues/101)) ([7c56e28](https://github.com/rolehippie/terraform/commit/7c56e289e166de6dc256fbe87b66a89b7fc45fd6))
+* **mise:** update dependency pipx:ansible-core to v2.21.5 ([#109](https://github.com/rolehippie/terraform/issues/109)) ([2f3ec32](https://github.com/rolehippie/terraform/commit/2f3ec322bfe8ce2dfd0a7ea65796947d02d7d457))
+* **mise:** update dependency pipx:ansible-doctor to v8.4.2 ([#103](https://github.com/rolehippie/terraform/issues/103)) ([412ba76](https://github.com/rolehippie/terraform/commit/412ba76ac135c978e61920e8e63a7ce5d89285a3))
+* **mise:** update dependency pipx:ansible-doctor to v8.4.3 ([#110](https://github.com/rolehippie/terraform/issues/110)) ([1be3812](https://github.com/rolehippie/terraform/commit/1be381250f83eaa1d0520ef095587203948000d5))
+* **mise:** update dependency pipx:ansible-lint to v26.10.0 ([#111](https://github.com/rolehippie/terraform/issues/111)) ([ea6de50](https://github.com/rolehippie/terraform/commit/ea6de50d57e7f721c5f605588662292e7fda62f1))
+* **mise:** update dependency pipx:ansible-lint to v26.10.1 ([#113](https://github.com/rolehippie/terraform/issues/113)) ([d289671](https://github.com/rolehippie/terraform/commit/d289671b7b4a50d74d367119218035165b284045))
+* **mise:** update dependency pipx:ansible-lint to v26.9.0 ([#104](https://github.com/rolehippie/terraform/issues/104)) ([d27f088](https://github.com/rolehippie/terraform/commit/d27f0889e910efc061465af6bbd059bb1ac62cfa))
+* **mise:** update dependency pipx:molecule to v26.10.0 ([#112](https://github.com/rolehippie/terraform/issues/112)) ([7861edf](https://github.com/rolehippie/terraform/commit/7861edf25276c2b95e156b7a8fb6d16c68378dd8))
+* **mise:** update dependency pipx:molecule to v26.9.0 ([#105](https://github.com/rolehippie/terraform/issues/105)) ([60b8a5e](https://github.com/rolehippie/terraform/commit/60b8a5e4b681f72574ddf44487abb264497769ee))
+* **mise:** update dependency prek to v0.5.3 ([#102](https://github.com/rolehippie/terraform/issues/102)) ([e6be2ac](https://github.com/rolehippie/terraform/commit/e6be2ac070043aaa2d0252d7256407c994b2fd88))
+* **mise:** update dependency prek to v0.5.4 ([#106](https://github.com/rolehippie/terraform/issues/106)) ([d652fb6](https://github.com/rolehippie/terraform/commit/d652fb6784704f4a1078397b52a2fba55738e65e))
+* **mise:** update dependency prek to v0.5.5 ([#108](https://github.com/rolehippie/terraform/issues/108)) ([2753f08](https://github.com/rolehippie/terraform/commit/2753f08d477d8eb90877bb723a240c5b8703d662))
+* **mise:** update dependency prek to v0.5.6 ([#114](https://github.com/rolehippie/terraform/issues/114)) ([740e98b](https://github.com/rolehippie/terraform/commit/740e98b68becbbc146d0e942627d7784e6cc8b3c))
+* **mise:** update dependency prek to v0.5.7 ([#115](https://github.com/rolehippie/terraform/issues/115)) ([cd13b9a](https://github.com/rolehippie/terraform/commit/cd13b9a71986fc1b6b9398ec00bf15306a5c2048))
+
 ## [2.19.0](https://github.com/rolehippie/terraform/compare/v2.18.1...v2.19.0) (2026-09-07)
 
 ### Features
