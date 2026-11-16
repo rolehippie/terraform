@@ -1,5 +1,21 @@
 # Changelog
 
+## [2.21.0](https://github.com/rolehippie/terraform/compare/v2.20.0...v2.21.0) (2026-11-16)
+
+* automated readme update [skip ci] ([9c5dce3](https://github.com/rolehippie/terraform/commit/9c5dce30893da60333b205e3bd33e0745edc4302))
+* automated release update [skip ci] ([959b80c](https://github.com/rolehippie/terraform/commit/959b80cfeffc2976195c34644e74271242b78dba))
+
+### Dependencies
+
+* **minor:** update dependency terraform-linters/tflint to v0.66.0 ([#124](https://github.com/rolehippie/terraform/issues/124)) ([0a8487a](https://github.com/rolehippie/terraform/commit/0a8487abf741adf1002a49fa2a96bd7d04ccd0f7))
+* **mise:** update dependency pipx:ansible-core to v2.22.0 ([#119](https://github.com/rolehippie/terraform/issues/119)) ([876d57c](https://github.com/rolehippie/terraform/commit/876d57ce53a58960646cd97199386c6537d3ddde))
+* **mise:** update dependency pipx:ansible-doctor to v8.4.4 ([#123](https://github.com/rolehippie/terraform/issues/123)) ([8035fd9](https://github.com/rolehippie/terraform/commit/8035fd981c970266ed0f9d041a77fe3ae99046b2))
+* **mise:** update dependency pipx:ansible-lint to v26.11.0 ([#121](https://github.com/rolehippie/terraform/issues/121)) ([d7d9a33](https://github.com/rolehippie/terraform/commit/d7d9a3377f0871e2f49c032ce429beb02e11cda3))
+* **mise:** update dependency pipx:molecule to v26.11.0 ([#122](https://github.com/rolehippie/terraform/issues/122)) ([56f8993](https://github.com/rolehippie/terraform/commit/56f899389faff46aaa6adbc0add20a50083102e4))
+* **mise:** update dependency prek to v0.5.10 ([#120](https://github.com/rolehippie/terraform/issues/120)) ([09eec04](https://github.com/rolehippie/terraform/commit/09eec044a34833a76b05bd6fb848e0493ca0861d))
+* **mise:** update dependency prek to v0.5.9 ([#118](https://github.com/rolehippie/terraform/issues/118)) ([81bc750](https://github.com/rolehippie/terraform/commit/81bc75034664d9cd84b7a28de0aec8b52b86cdb1))
+* **mise:** update node.js to v26 ([#117](https://github.com/rolehippie/terraform/issues/117)) ([0035126](https://github.com/rolehippie/terraform/commit/0035126e0219aa24d33dd8942997ae3ae66dcdea))
+
 ## [2.20.0](https://github.com/rolehippie/terraform/compare/v2.19.0...v2.20.0) (2026-10-26)
 
 ### Dependencies
